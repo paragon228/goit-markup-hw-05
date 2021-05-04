@@ -381,12 +381,55 @@
                         </li>
                     </ul>
                 </div>
+                <div class="mailing positive">
+                    <h6 class="appeal-text">Подпишитесь на рассылку</h6>
+                    <form class="footer-form">
+                        <input class="footer-field" type="text" name="E-mail" placeholder="E-mail">
+                        <button class="button" type="submit">Подписаться
+                            <svg class="subscribe">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </ul>
         </div>                             
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="btn-close" data-modal-close>
+            <h6 class="modal-title">Оставьте свои данные, мы вам перезвоним</h6>
+            <form class="form">
+                <label class="form-field-label">
+                    <span class="indicate">Имя</span>
+                    <input class="form-field" type="text" name="user_name">
+                    <svg class="icon" width="12px" height="12px">
+                        <use href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+                </label>
+                <label class="form-field-label">
+                    <span class="indicate">Телефон</span>
+                    <input class="form-field" type="tel" name="user_phone">
+                    <svg class="icon" width="12px" height="12px">
+                        <use href="./images/icons.svg#icon-Phone"></use>
+                    </svg>
+                </label>
+                <label class="form-field-label">
+                    <span class="indicate">Почта</span>
+                    <input class="form-field" type="mail" name="user_mail">
+                    <svg class="icon" width="15px" height="12px">
+                        <use href="./images/icons.svg#icon-Mail"></use>
+                    </svg>
+                </label>
+                <span class="indicate">Комментарий</span>
+                <textarea class="form-field form-message" name="user_message" cols="30" rows="8" placeholder="Введите текст"></textarea>
+                <label class="consent">
+                    <input class="checkbox" type="checkbox" name="consent">
+                    <span class="checkbox-icon"></span>
+                    Соглашаюсь с рассылкой и принимаю <a href="Условия договора" class="consent-link">Условия договора</a>
+                </label>
+                <button class="button" type="submit">Отправить</button> 
+            </form>
+            <button class="btn-close" type="submit" data-modal-close>
                 <svg width="18px" height="18px">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
